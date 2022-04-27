@@ -2,10 +2,13 @@
 
 
 :root{
-    --blue1: #3ad1ff;
+    --blue1: #3aa6ff;
     --orange1 : #ffa217;
 }
-
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
 .background-login{
     height: 100vh;
     background:linear-gradient(rgba(0, 0, 0, 0.192) , rgba(0, 0, 0, 0.151)), url(./images/login.jpg);
@@ -50,20 +53,10 @@
 }
 .pss_frgt p{
     font-size: 14px;
-    margin-margin: 15px;
+    margin-left: 6px;
 }
 .pss_frgt p span{
     color: var(--blue1);
-}
-sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: #f5f5f5;
-    z-index: -1;
-    transition: all 0.5s;
-    width: 17%;
 }
 .image_profile img{
     width: 105px;
@@ -142,4 +135,28 @@ sidebar{
     height: 10px;
     width: 60% !important;
     border-radius: 5px;
+}
+.sidebar1 ul li a{
+    /* font-weight: 500; */
+    color: rgb(105, 105, 105);
+}
+.sidebar1 ul li a i{
+    font-weight: 400;
+    font-size: 1.2rem !important;
+}
+.sidebar1 ul li a:hover{
+    color: var(--blue1);
+}
+.class_card{
+    position:relative;
+    overflow: hidden;
+}
+.graduation_icon{
+    color: rgb(36, 175, 255);
+    position: absolute;
+    font-size: 4.5rem;
+    top: -20px;
+    right: 4px;
+    opacity: 0.3;
+    
 }
