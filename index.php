@@ -36,7 +36,7 @@
                             </div>
                         </form>
                         <div class="text-center pss_frgt fs-6 text-white">
-                            <p class="">Forgot your Password ?<a href="home.html">Click here</a></p>
+                            <p class="">Forgot your Password ?<a href="home.php">Click here</a></p>
                         </div>
                     </div>
                 </div>

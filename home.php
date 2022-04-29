@@ -1,82 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" school management">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Dashboard</title>
-</head>
+<?php include 'includes/head.php'; ?>
 <body>
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
+    <div class="container-fluid p-0 m-0">
+        <div class="d-flex flex-nowrap">
             <!-- start sidebar -->
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light shadow sidebar1">
-                <div class="d-flex flex-column align-items-center  px-3 pt-2 text-white min-vh-100">
-                    <div class="d-flex justify-content-center mb-2 ">
-                        <a href="/" class="d-flex justify-content-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                            <img src="./images/Salford.png" class="d-none d-sm-inline" width="50">
-                        </a>
-                    </div>
-                    <div class="image_profile text-center">
-                        <img src="./images/avatar1.jpg" class="d-none d-sm-inline" alt="">
-                        <p class="text-dark d-none d-sm-block"><strong >Meley Say</strong></p>
-                    </div>
-                    
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mt-2" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"  class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-mortarboard"></i> <span class="ms-1 d-none d-sm-inline">Student</span> 
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Teachers</span></a>
-                        </li>
-                        <li>
-                            <a href="classes.html" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-diagram-3"></i> <span class="ms-1 d-none d-sm-inline">Classes</span>
-                            </a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle mt-2">
-                                <i class="fs-4 bi-person-circle"></i> <span class="ms-1 d-none d-sm-inline">Profile</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-box-arrow-in-right"></i> <span class="ms-1 d-none d-sm-inline">Logout</span> </a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
+            <?php include 'includes/sidebar.php'; ?>
                 <!-- end sidebar -->
-            <div class="col-sm-9 col-md-9 col-xl-10  px-0 bg-white shadow">
-                <nav class="bg-blue p-2">
-                    <div class="search">
-                        <input type="search" class="input-form" placeholder="Search ...">
-                        <button class="btn-search"><i class="bi-search"></i></button>
-                    </div>
-                </nav>
+            <div class="col-lg-10 col-11 col-sm-9 px-0 bg-white shadow">
+            <?php include 'includes/navbar.php'; ?>
                 <main>
                     <div class="title_page p-2">
                         <h5>Dashboard</h5>
                         <p>Welcome to Standford .</p>
                     </div>
-                    <div class="row p-2 ">
+                    <div class="d-flex gap-3 flex-wrap p-2 ">
                         <!-- code here -->
                         <!-- del -->
-                        <div class="col-sm-10 col-md-6 col-xl-3 mb-2">
+                        <div class="col-sm-10 col-md-5 col-10 col-xl-3 mb-2 card_static">
                             <div class="card shadow border-0 fs-6">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
@@ -95,7 +36,7 @@
                             </div>
                         </div>
                         <!-- <--------------------->
-                        <div class="col-sm-10 col-md-6 col-xl-3 mb-2">
+                        <div class="col-sm-10 col-md-5 col-10 col-xl-3 mb-2 card_static">
                             <div class="card shadow border-0">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
@@ -114,7 +55,7 @@
                             </div>
                         </div>
                         <!-- <--------------------->
-                        <div class="col-sm-10 col-md-6 col-xl-3 mb-2">
+                        <div class="col-sm-10 col-md-5 col-10 col-xl-3 mb-2 card_static">
                             <div class="card shadow border-0">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
@@ -133,7 +74,7 @@
                             </div>
                         </div>
                         <!-- <--------------------->
-                        <div class="col-sm-10 col-md-6 col-xl-3 mb-2">
+                        <div class="col-sm-10 col-md-5 col-10 col-xl-2  mb-2 card_static">
                             <div class="card shadow border-0">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
@@ -159,6 +100,9 @@
             </div>
         </div>
 
+
+
+        
             
 </body>
 </html>
