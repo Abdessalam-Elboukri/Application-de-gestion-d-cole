@@ -63,6 +63,9 @@
     height: 105px;
     border-radius: 50%;
 }
+.search{
+    padding: 12px 8px;
+}
 .bg-blue{
     background-color: var(--blue1);
 }
@@ -74,6 +77,9 @@
     padding-left: 6px;
     font-size: 14px;
     opacity: 0.7;
+}
+.search::placeholder{
+    color: white;
 }
 .search input:focus{
     outline: none;
@@ -136,6 +142,7 @@
     width: 60% !important;
     border-radius: 5px;
 }
+
 .sidebar1 ul li a{
     /* font-weight: 500; */
     color: rgb(105, 105, 105);
@@ -158,5 +165,27 @@
     top: -20px;
     right: 4px;
     opacity: 0.3;
-    
+}
+abbr{
+    text-decoration: none !important;
+}
+.table_students thead th{
+    color: var(--blue1);
+    font-size: 16px;
+    font-weight: 400;
+}
+.table_students tbody td{
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+}
+/* .card_static{
+    max-width: 255px;
+} */
+.arrow_class button{
+    transform: rotate(90deg) !important;
+    color: aquamarine;
+}
+.table_students tbody {
+    border-radius: 8px;
+
 }
