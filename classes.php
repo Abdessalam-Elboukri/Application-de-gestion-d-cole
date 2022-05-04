@@ -7,14 +7,14 @@
             <!-- start sidebar -->
             <?php include 'includes/sidebar.php' ?>
                 <!-- end sidebar -->
-            <div class="col-lg-10 col-11 col-sm-9 px-0 bg-white shadow">
+            <div class="container-fluid p-0">
                 <?php include 'includes/navbar.php'; ?>
                 <main>
                     <div class="title_page p-2">
                         <h5>Classes</h5>
                         <p>Welcome to Standford .</p>
                     </div>
-                    <div class="d-flex flex-wrap gap-3 p-2 ">
+                    <div class="d-flex flex-wrap justify-content-center justify-content-sm-start gap-3 p-2 ">
                         <div class="col-10 col-md-5 col-xl-3 mb-2 " onclick="popup('https://youtube.com','600px','700px')">
                             <div class="card shadow border-0 class_card">
                                 <div class="card-body " >
@@ -110,7 +110,11 @@
                         <h5 class="modal-title" id="class_students">Students</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="d-flex fs-6 text-muted mt-1 px-3">
+                        <h6 class="me-4"> Class : <span>A</span></h6>
+                        <h6>Professeur : <span>Hamza  </span></h6>
+                    </div> 
+                    <div class="modal-body student_modal">
                         <ul>
                             <li>steve harvey</li>
                             <li>steve harvey</li>
@@ -123,8 +127,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-            
+        </div> 
+        <script src="./script.js"></script>
 </body>
 </html>
