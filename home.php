@@ -7,14 +7,14 @@
             <!-- start sidebar -->
             <?php include 'includes/sidebar.php'; ?>
                 <!-- end sidebar -->
-            <div class="col-lg-10 col-11 col-sm-9 px-0 bg-white shadow">
+            <div class="container-fluid p-0 m-0 content">
             <?php include 'includes/navbar.php'; ?>
-                <main>
+                <main style="overflow: scroll;">
                     <div class="title_page p-2">
                         <h5>Dashboard</h5>
                         <p>Welcome to Standford .</p>
                     </div>
-                    <div class="d-flex gap-3 flex-wrap p-2 ">
+                    <div class="d-flex gap-3 flex-wrap justify-content-center p-2 ">
                         <!-- code here -->
                         <!-- del -->
                         <div class="col-sm-10 col-md-5 col-10 col-xl-3 mb-2 card_static">
@@ -95,14 +95,18 @@
                         <!-- del -->
                         <!-- <--------------------->
                     </div>
+                    <!-- chart -->
+                    <div class="mt-3 p-2 d-flex justify-content-between px-4 flex-wrap">
+                        <canvas id="myChart" style="width:100%; max-width:500px"></canvas>
+                        <canvas id="myChart2" style="width:100%; max-width:500px"></canvas>
+                    </div>
                 </main>
             </div>
             </div>
         </div>
 
-
-
-        
-            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./script.js"></script> 
+    
 </body>
 </html>

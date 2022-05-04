@@ -1,13 +1,19 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+.body{
+    box-sizing: border-box !important;
+}
 
 :root{
     --blue1: #3aa6ff;
     --orange1 : #ffa217;
 }
 ::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
+    width: 0px;
+    height: 0px;
+}
+select option:hover{
+    background-color: #3aa6ff;
 }
 .background-login{
     height: 100vh;
@@ -142,7 +148,19 @@
     width: 60% !important;
     border-radius: 5px;
 }
-
+.sidebar_responsive{
+    transition: margin 0.5s ease-in-out;
+    position: relative;
+   
+    
+}
+.sidebar_margin{
+    padding: 1px;
+    color: rgb(255, 58, 186);
+}
+.sidebar1{
+    transition: all .5s ease-in-out;
+}
 .sidebar1 ul li a{
     /* font-weight: 500; */
     color: rgb(105, 105, 105);
@@ -187,5 +205,25 @@ abbr{
 }
 .table_students tbody {
     border-radius: 8px;
-
+}
+.student_modal ul{
+    list-style: none;
+    padding: 0;
+}
+.student_modal ul li{
+    display: inline-block;
+    padding: 10px ;
+    border: 1.5px solid rgb(140, 238, 255);
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.student_modal ul li:hover{
+    transform: scale(1.02);
+}
+.profile-info{
+    font-style: italic;
+    font-size: 17px;
 }
